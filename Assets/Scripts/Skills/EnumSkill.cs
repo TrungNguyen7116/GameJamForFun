@@ -4,5 +4,7 @@ using UnityEngine;
 
 public enum EnumSkill
 {
-    BASIC
+    BASIC,
+    FIRE,
+    WATER
 }

@@ -8,7 +8,15 @@ public class SkillFactory : MonoBehaviour
     { }
     public static Skills GetSkill(EnumSkill type)
     {
-        //switch-case
+        switch (type)
+        {
+            case EnumSkill.BASIC:
+                return new Basic();
+            case EnumSkill.FIRE:
+                return new Fire();
+            case EnumSkill.WATER:
+                return new Water();
+        }
         return new Skills();
     }
 }

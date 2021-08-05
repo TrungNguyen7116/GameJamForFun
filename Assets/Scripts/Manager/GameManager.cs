@@ -6,8 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instace;
     public CharacterData characterData;
-    //public List<Skills> skills;
+    public int skillData;
     public List<ItemData> itemData;
+    public int floor;
 
     void Start()
     {
@@ -21,6 +22,5 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         SaveManager.LoadData();
-        PlayerPrefs.GetInt("FLOOR"); //Get floor - initial = 0;
     }
 }

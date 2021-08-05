@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Skills
 {
-    protected int factor;
+    protected float factor;
     protected int countDown;
     protected int countDownMax;
 
